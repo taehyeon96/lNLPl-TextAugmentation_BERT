@@ -101,6 +101,27 @@ Keyword : #NLP, #BERT, #TextAugmentation, #DataAugmentation, #Fine-tuning
  - https://github.com/varinf/TransformersDataAugmentation/blob/main/src/bert_aug/cbert.py
 
 
+---
+#### ~ 21/05/30 해야할 일 정리 ]
+#. git의 BERT로 train 및 aug완료했으니 다음스텝으로 가자
+
+#. 1. Augmentation 완료된 tsv파일이 어떻게 구성되어 있는지 파악
+- 구글에 exp_0_10/aug완료.tsv 파일 끌어다가 둬보기!!!!!!
+- 교수님이 줄 L2데이터는 .txt이고 tsv랑 아마 다를거같음
+- 1-1.일단 numeric//human//location//등으로 구분되어있음
+- 1-2. exp_0_10  exp_1_10 ... exp_i_10이란 (1-1.)의 구분별로 10개씩 총 i로 나눠 저장한것
+
+
+
+#. 2. 따라서 L2.txt를 git에서 aug하기 전 train.tsv랑 스크립트 형식이 같게 바꿔줄것!!!
+- 그냥 코드 그대로 돌릴 수 있도록 파일을 만들어버리게
+  (그게 코드수정 안해도 되고 편함)
+
+#. 3. 내꺼 환경에서 git 코드 그대로해서 L2데이터 돌려보자
+- trec폴더에 dev.tsv test.tsv train.tsv 각각 L2꺼를 수정해서 넣어줘야하고
+- exp_0_10 같은 폴더들에 train.tsv들도 싹다  L2데이터꺼로 바꿔야함!!!!!
+
+#. 3. 그 lower_trec.sh파일에서 사용하는 bert.py 내용물 코드 분석해서 리뷰 준비할것
 
 
 
