@@ -48,9 +48,12 @@ Keyword : #NLP, #BERT, #TextAugmentation, #DataAugmentation #EDA
   
 ---
 ---
-## Update the varinf's script file   (추후 필요한것만 따로 빼서 넣으면 이 부분 지울 것)
+## Modify the path in script file for suit yours
 
-* 
+* src/scripts/bert_L2_lower.sh or src/scripts/bert_trec_lower.sh
+  - SRC
+  - CACHE
+  - RAWDATADIR
 
 
 ---
