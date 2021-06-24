@@ -1,0 +1,2 @@
+# input_trec_dataset_in_this_folder.txt
+# run src/utils/download_and_prepare_datasets.sh
