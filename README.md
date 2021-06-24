@@ -1,6 +1,6 @@
 # Text Augmentation using by BERT model
-Keyword : #NLP, #BERT, #TextAugmentation, #DataAugmentation
-##### Written by Taehyeon Kwon  (Reporting date : 2021/06)
+Keyword : #NLP, #BERT, #TextAugmentation, #DataAugmentation #EDA
+##### Written by Taehyeon Kwon  (Reporting date : 2021.04 ~ 2021.06)
 
 ---
 ---
@@ -12,24 +12,11 @@ Keyword : #NLP, #BERT, #TextAugmentation, #DataAugmentation
 
 * Code contains implementation of the following data augmentation methods
 
-  - EDA (Baseline)
-  - Backtranslation (Baseline)
-  - CBERT (Baseline)
+  - EDA
+  - Backtranslation
+  - BERT
 
 
----
----
-## DataSets
-
-* I used a dataset from following resource to test augmentationing code using by bert.
-  - TREC : https://github.com/1024er/cbert_aug/tree/crayon/datasets/TREC
-  - Augmentationing code : https://github.com/varinf/TransformersDataAugmentation
-
-* Low-data setup
-  - L2+L3 DataSets : For students who speak Korean as first language, this dataset consists of sentences for students studying English as a second language.
-  - [Private]
-
-  
 ---
 ---
 ## Dependencies
@@ -46,10 +33,24 @@ Keyword : #NLP, #BERT, #TextAugmentation, #DataAugmentation
 
 ---
 ---
+## DataSets
+
+* I used a dataset from following resource to test augmentationing code using by bert.
+  - TREC : https://github.com/1024er/cbert_aug/tree/crayon/datasets/TREC
+  - Augmentationing code : https://github.com/varinf/TransformersDataAugmentation
+
+* Low-data setup
+  - L2+L3 DataSets : For students who speak Korean as first language, this dataset consists of sentences for students studying English as a second language.
+  - [Private]
+
+* If you want to augment your datasets (anything text data), check "How to run - Prepare your datasets"
+  
+  
+---
+---
 ## Update the varinf's script file   (추후 필요한것만 따로 빼서 넣으면 이 부분 지울 것)
 
 * 
-
 
 
 ---
@@ -61,15 +62,20 @@ Keyword : #NLP, #BERT, #TextAugmentation, #DataAugmentation
   
 * For prepare a jupyter file, clone or download file in this repository.
   
-* Prepare the L2-Datasets and match data format
+* Prepare the L2-Datasets(or your datasets) and match data format
   - .tsv file
   - labeling : "Description"
   - [train || dev || test] -> (train+dev) : test = 7.5 : 2.5
   - Put the train.tsv, dev.tsv, test.tsv in the folder (Datasets/L2/)
   - Split each of the .tsv files and put them in each folder (Datasets/L2/exp_{i}_10,  i=[0:14])
     
-* To run data augmentation experiment for a given dataset, run "bash" script in scripts folder. For example, to run data augmentation on L2 dataset,
-  - run "    .ipynb" 
+* To run text augmentation experiment for your dataset, run following jupyter file in this repository.
+  - run "start_L2 Aug_with_jupyter.ipynb" 
   
-  
-.
+* To check text augmentation result for your dataset, run following jupyter file in this repository.
+  - run "check_L2 Aug_with_jupyter.ipynb" 
+
+* To download text augmentation result, run following jupyter file in this repository.
+  - run "download_L2 Aug_with_jupyter.ipynb" 
+
+
