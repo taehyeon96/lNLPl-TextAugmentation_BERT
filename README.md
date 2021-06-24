@@ -27,7 +27,7 @@ Keyword : #NLP, #BERT, #TextAugmentation, #DataAugmentation
 
 * Low-data setup
   - L2+L3 DataSets : For students who speak Korean as first language, this dataset consists of sentences for students studying English as a second language.
-  - <Private>
+  - [Private]
 
   
 ---
@@ -46,6 +46,14 @@ Keyword : #NLP, #BERT, #TextAugmentation, #DataAugmentation
 
 ---
 ---
+## Update the varinf's script file   (추후 필요한것만 따로 빼서 넣으면 이 부분 지울 것)
+
+* 
+
+
+
+---
+---
 ## How to run
 
 * For prepare a script file, clone the git.   (추후 필요한 것만 따로 빼서 레포에 올릴 것)
@@ -53,13 +61,15 @@ Keyword : #NLP, #BERT, #TextAugmentation, #DataAugmentation
   
 * For prepare a jupyter file, clone or download file in this repository.
   
-* Prepare the L2 Datasets and match data format
+* Prepare the L2-Datasets and match data format
   - .tsv file
   - labeling : "Description"
   - [train || dev || test] -> (train+dev) : test = 7.5 : 2.5
-  
+  - Put the train.tsv, dev.tsv, test.tsv in the folder (Datasets/L2/)
+  - Split each of the .tsv files and put them in each folder (Datasets/L2/exp_{i}_10,  i=[0:14])
+    
 * To run data augmentation experiment for a given dataset, run "bash" script in scripts folder. For example, to run data augmentation on L2 dataset,
-  
+  - run "    .ipynb" 
   
   
 .
