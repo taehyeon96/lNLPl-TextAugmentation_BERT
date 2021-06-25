@@ -60,25 +60,21 @@ Keyword : #NLP, #BERT, #TextAugmentation, #DataAugmentation #EDA
 ---
 ## How to run
 
-* For prepare a script file, clone the git.   (추후 필요한 것만 따로 빼서 레포에 올릴 것)
-  - !git clone https://github.com/varinf/TransformersDataAugmentation.git
-  
-* For prepare a jupyter file, clone or download file in this repository.
-  
+* For prepare a source code, clone or download file in this repository.
+  - !git clone https://github.com/taehyeon96/TextAugmentation_BERT.git
+
 * Prepare the L2-Datasets(or your datasets) and match data format
+  - check above [Datasets]
   - .tsv file
   - labeling : "Description"
   - [train || dev || test] -> (train+dev) : test = 7.5 : 2.5
   - Put the train.tsv, dev.tsv, test.tsv in the folder (Datasets/L2/)
   - Split each of the .tsv files and put them in each folder (Datasets/L2/exp_{i}_10,  i=[0:14])
     
-* To run text augmentation experiment for your dataset, run following jupyter file in this repository.
+* To run text augmentation experiment of your dataset, run following jupyter file in this repository.
   - run "start_L2 Aug_with_jupyter.ipynb" 
   
-* To check text augmentation result for your dataset, run following jupyter file in this repository.
-  - run "check_L2 Aug_with_jupyter.ipynb" 
-
-* To download text augmentation result, run following jupyter file in this repository.
+* To download text augmentation result of your datasets, run following jupyter file in this repository.
   - run "download_L2 Aug_with_jupyter.ipynb" 
 
 
