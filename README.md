@@ -23,8 +23,9 @@ Keyword : #NLP, #BERT, #TextAugmentation, #DataAugmentation #EDA
 
 * To run this code, you need following dependencies "in your new virtual environment".
   - python 3.7         ( $ conda create --name tae python=3.7 )
-  - Pytorch 1.5        ( $ conda install -c conda-forge pytorch=1.5.0 )
   - fairseq 0.9        ( $ conda install -c conda-forge fairseq=0.9.0 )
+  - Pytorch 1.5        ( $ conda install -c conda-forge pytorch=1.5.0 )
+     - Download as appropriate for your GPU.
   - transformers 2.9   ( $ conda install -c conda-forge transformers=2.9.0 )
 
 * Then, check your dependencies.
